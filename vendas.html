@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<HTML lang = "pt-br">       
+	
+	<HEAD>
+		<title>
+			Thrust Drone Rio 
+		</title>
+		<base target="_blank" />
+		<link 	rel = "stylesheet"       
+				type = "text/css"
+				href = "projeto.css" 							
+						    />		
+	</HEAD>
+	
+	<BODY>
+		<header>
+			Thrust Drone Rio
+			<img class = "imglogo" src = "imagens/capa.png"/>
+		</header>
+	
+		<nav>
+			<fieldset>
+				<table width=100%>
+					<tr>
+						<td><a href = "inicial.html"> Início       </a></td>
+						<td><a href = "quem somos.html"> Quem somos       </a></td>
+						<td><a href = "drones.html">  Tipos de Drones     </a></td>
+						<td><a href = "vendas.html">  Cadastro            </a></td> 
+						<td><a href = "curriculo.html" > Trabalhe conosco </a></td>				
+					</tr>	
+				</table>
+			</fieldset>
+		</nav>	
+	
+	<section>
+		<form method = "post">
+
+			<fieldset>
+				<legend> Dados Pessoais</legend>
+
+				<div class="divLinha">
+				<label for="idemail" class="colPri"> E-mail: </label>
+				<input type="text"   maxlength = "40" class="inpMedio" id="idemail">
+				</div>
+
+				<div class="divLinha">
+				<label for="idNome" class="colPri"> Nome: </label>
+				<input type="text"  maxlength = "40" class="inpMedio" id="idNome">
+				</div>
+
+				<div class="divLinha">
+				<label for="idEnd" class="colPri"> Endereço: </label>
+				<input type="text" maxlength = "65" class="inpGrande" id="idEnd">
+
+				<input type="text"  maxlength = "20" class="inpPequenoDir" id="idCom"> 
+				<label for= "idCom" class="elemDir"> Complemento: </label>		
+			
+				</div>
+				
+				<div class="divLinha">
+				<label for="idCEP" class="ColPri"> CEP: </label>
+				<input type="text" class="inpCep5" maxlength="5"
+				onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;"> -
+				
+				<input type="text" class="inpCep3" maxlength="3"
+				onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;">
+
+				</div>
+
+				<div class="divLinha">
+				<label for="idSenha" class="colPri"> Senha: </label>
+				<input type="password" maxlength = "12" placeholder="max 12 caracteres" class="inpPequeno" id="idSenha"	>
+
+				<input type="password" maxlength = "12" placeholder="max 12 caracteres" class="inpPequenoDir" id="idSenhaConf" >
+				
+				<label for="idSenhaConf" class="elemDir"> Confirmar Senha: </label>
+				</div>
+
+
+
+				<div class="botoes">
+				<input type="submit" value="Enviar" />
+				<input type="reset"  value="Limpar" />
+				</div>
+
+			</fieldset>
+		</form>
+	</section>
+
+	<footer>
+	<p> Esta página visa apenas divulgar os conhecimentos do autor em HTML, CSS e JavaScript para fins de currículo profissional. 
+	O autor não se responsabiliza por cópias de terceiros de qualquer código deste projeto, assim como não colocará este site no ar. </p>
+	</footer>
+
+	
+	</BODY>
+</HTML>	

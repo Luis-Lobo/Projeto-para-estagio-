@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<HTML lang = "pt-br">       
+<!-- lang significa language -->
+	
+	<HEAD>
+
+		<script 
+			 src="projetoJavaScript.js"
+	
+			 src="teste.js" >
+		</script>
+	
+		<title>
+			Thrust Drone Rio 
+		</title>
+		<base target="_blank" />
+		<link rel = "stylesheet"       
+		      type = "text/css"
+		      href = "projeto.css" 							
+					/>
+		<!-- Importa folha de estilo --> 		
+	</HEAD>
+
+	<BODY>
+	<header>
+		Thrust Drone Rio
+		<img class = "imglogo" src = "imagens/capa.png"/>
+	</header>
+	
+	<nav>
+		<fieldset>
+		    <table width=100%>
+			<tr>
+				<td><a href = "Inicial.html"    > Início       	     </a></td>
+				<td><a href = "quem somos.html" > Quem somos         </a></td>
+				<td><a href = "drones.html"     > Tipos de Drones    </a></td>
+				<td><a href = "vendas.html"     > Cadastro           </a></td> 
+				<td><a href = "curriculo.html"  > Trabalhe conosco   </a></td>				
+			</tr>	
+		    </table>
+		</fieldset>
+	</nav>	
+	
+	<section>
+		<form method="post">
+		<table class="tabinfo">
+			<tr>
+			<th colspan="3" class="titulo"> Drones </th>
+			</tr>
+
+			<tr>
+			<th class="linTH"> Tipo </th>
+			<th class="linTH"> Modelo </th>
+			<th class="linTH"> Imagem/Preço </th>
+			</tr>
+
+			<tr>
+				<th rowspan="4" class="colTH"> Asas Fixa</th>
+			
+				<td><a target="_self" href="javascript:Mostra(1);">JA39</a></td>
+
+				<th rowspan="9"><img id="imgCad" class="imgJan" src="imagens/vazio.jpg" />
+		        	<div id="prcCad" class="preco">&nbsp; </div>
+		
+
+				<input type="button" value="Comprar" onClick="Compra(this.form);" />
+				</th>
+			
+			</tr>
+
+			<tr> 
+				<td><a target="_self" href="javascript:Mostra(2);">OKEN EPO</a> </td> 
+			</tr>
+
+			<tr> 
+				<td><a target="_self" href="javascript:Mostra(3);">OKEN PHOENIX TB-6011</a></td>
+			</tr>
+
+			<tr> 
+				<td><a target="_self" href="javascript:Mostra(4);">ZOHD DARK</a></td>
+			</tr>
+
+			<tr>
+				<th rowspan="5" class="colTH"> Asas Rotativa </th>
+	
+				<td><a target="_self" href="javascript:Mostra(5);">CheersonCX40</a></td>
+			</tr>
+
+
+			<tr> 
+				<td><a target="_self" href="javascript:Mostra(6);">Nano Quadcopter Crazyflie 2.1Open Source</a></td>
+			</tr>
+
+
+			<tr> 
+				<td><a target="_self" href="javascript:Mostra(7);">Drocon Ninja</a></td>
+			</tr>
+
+
+			<tr> 
+				<td><a target="_self" href="javascript:Mostra(8);">EachineE58</a></td>
+			</tr>
+
+
+			<tr> 
+				<td><a target="_self" href="javascript:Mostra(9);">NanoHexacopter JJRC</a></td>
+			</tr>
+				
+			<tr>
+				<td colspan="2">Total</td>
+				<td><label class="elemDir" for="TxtTotal"><br/>Valor: R$
+				<input type="text" name="TxtTotal" readonly
+				id="TxtTotal" class="inpMedio" /></label>
+
+				</td>
+			</tr>
+
+			
+		</table>
+		</form>
+	</section>
+
+	<footer>
+	<p> Esta página visa apenas divulgar os conhecimentos do autor em HTML, CSS e JavaScript para fins de currículo profissional. 
+	O autor não se responsabiliza por cópias de terceiros de qualquer código deste projeto, assim como não colocará este site no ar. </p>
+	</footer>
+
+	</BODY>
+</HTML>

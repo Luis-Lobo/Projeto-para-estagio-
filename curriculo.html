@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang = "pt-br">
+
+	<HEAD>
+		<title>
+			Thrust Drone Rio 
+		</title>
+		<base target="_blank" />
+		<link 	rel = "stylesheet"       
+				type = "text/css"
+				href = "projeto.css" 							
+						    />		
+	</HEAD>
+	
+	<BODY>
+		<header>
+			Thrust Drone Rio
+			<img class = "imglogo" src = "imagens/capa.png"/>	
+		</header>
+	
+		<nav>
+			<fieldset>
+				<table width=100%>
+					<tr>
+						<td><a href = "inicial.html"> Inicio               </a></td>
+						<td><a href = "quem somos.html"> Quem somos        </a></td>
+						<td><a href = "drones.html">  Tipos de Drones      </a></td>
+						<td><a href = "vendas.html">  Cadastro             </a></td> 
+						<td><a href = "curriculo.html" > Trabalhe conosco  </a></td>				
+					</tr>	
+				</table>
+			</fieldset>
+		</nav>	
+	
+	<section>
+
+	<div id="posesq">
+
+		<form method ="post">    
+		<!-- método é a forma de envio do formulario. pode ser post ou get -->
+
+<!--------------------------------------INFORMAÇÕES PESSOAIS -------------------------------------------------->
+			
+			<fieldset>
+			<legend> Informações pessoais </legend>
+				<div class="divLinha">
+				<label for="idNome" class="colPri"> Nome: </label>
+				<input type="text"  maxlength = "40" class="inpMedio" id="idNome">
+				</div>
+
+				<div class="divLinha">
+				<label for="idEnd" class="colPri"> Endereço: </label>
+				<input type="text" maxlength = "65" class="inpGrande" id="idEnd">
+
+				<input type="text"  maxlength = "20" class="inpPequenoDir" id="idCom"> 
+				<label for= "idCom" class="elemDir"> Complemento: </label>
+				</div>
+
+				<div class="divLinha">
+
+				<label for="idDD" class="colPri"> </label>
+				<input type="text" maxlength = "2" class="inpMin" id="idDD"
+				onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;">
+
+				<label for="idTel" class="colPri"> Telefone: </label>
+				<input type="text" maxlength = "9" class="inpPequeno" id="idTel"
+				onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;">
+
+				<input type="text"  maxlength = "9" class="inpPequenoDir" id="idCel"
+				onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;"> 
+				
+				<input type="text" maxlength = "2" class="inpMinDir" id="idDDCel"
+				onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;">
+				
+				<label for= "idCel" class="elemDir"> Celular: </label>
+				
+				<label for="idDDCel" class="elemDir"> </label>
+
+				</div>
+
+				
+				<div class="divLinha">
+				<label for="idemail" class="colPri"> E-mail: </label>
+				<input type="text"   maxlength = "40" class="inpMedio" id="idemail">
+				</div>
+
+
+				<fieldset class="fieldsEsq"><legend>Nascimento</legend> 
+				<input type="text" name="TextoDia" min="1" max= "31" maxlength="2"   class="numDD" 
+				onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;"/>
+				
+				<input type="text" name="TextoMes" min="1" max= "12" maxlength="2"  class="numDD" 
+				onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;"/>
+				
+				<input type="text" name="TextoAno" min="1900" max= "2019" maxlength="4" class="numQD" value="1980"
+					onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;"/>
+				
+
+				<fieldset class="fieldDir"><legend>Sexo</legend>
+				<label><input type="radio" name="SelectSexo" value="M" checked />masculino</label>
+				<label><input type="radio" name="SelectSexo" value="F"/>Feminimo</label>
+				</fieldset>
+				</fieldset>
+			</fieldset>
+			
+<!------------------------------------- CARTA DE APRESENTAÇÃO -------------------------------------------------->
+			<fieldset>
+			<legend><label for="carta"> Carta de Apresentação</label> </legend>
+			<textarea id="carta" name="carta"class="areaApres" placeholder="1000 caracteres" maxlength="1000"></textarea>		
+			</fieldset>
+<!-------------------------------------- EXPERIÊNCIA PROFISSIONAL -------------------------------------------------->
+			<fieldset>
+			<legend>Experiência profissional</legend>
+			<table>
+				<tr><th>Empresa:</th> <th><input type = "text" maxlength="30" class="inpMedio">  </th></tr>
+				<tr><th>Cargo:</th>   <th><input type = "text" maxlength="30" class="inpMedio">  </th></tr>
+			</table>
+			<label for="Descrição"> Descrição: </label>
+			<textarea id="descrição" name="Descrição" class="area"   
+			placeholder="500 caracteres" maxlength="500"></textarea>
+			</fieldset>
+
+<!-------------------------------------- FORMAÇÃO ACADÊMICA -------------------------------------------------->
+			<div class="divLinha">
+			<fieldset>
+			<legend> Formação acadêmica </legend>
+				Maior nível de escolaridade
+					<select name = "escolaridade">
+						<option> Ensino médio regular </option>
+						<option> Ensino médio técnico </option>
+						<option> Graduação            </option>
+						<option> Pós-Graduação 	      </option>
+						<option> Mestrado	      </option>
+						<option> Doutorado            </option>
+						<option> Pós-Doutorado	      </option>
+					</select>
+				</br>		
+				Instituição:      <input type="text" class="inpGrande"> 
+				Ano de conclusão: <input type="text" name="TextoConclusao" maxlength="4" class="numQD"
+				onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;"/>
+			
+			</fieldset>
+			</div>
+<!--------------------------------------IDIOMAS ESTRANGEIROS-------------------------------------------------->
+			<fieldset>
+				<legend> Idiomas Estrangeiros</legend>
+			<table>
+				<tr>		
+						<td>Inglês: </td> 
+						<td><input class="alignradio" type = "radio" name = "ling_ingles" value = N checked> Nenhum </td>
+						<td><input type = "radio" name = "ling_ingles" value = B > Básico 	 </td>
+						<td><input type = "radio" name = "ling_ingles" value = I > Intermediário </td>
+						<td><input type = "radio" name = "ling_ingles" value = A > Avançado	 </td>	
+						
+				</tr>
+				
+				<tr>
+						<td>Espanhol:</td> 
+						<td><input class="alignradio" type = "radio" name = "ling_esp" value = N checked> Nenhum </td>
+						<td><input type = "radio" name = "ling_esp" value = B > Básico </td>
+						<td><input type = "radio" name = "ling_esp" value = I > Intermediário</td>
+						<td><input type = "radio" name = "ling_esp" value = A > Avançado</td>	
+						
+				</tr>
+
+				<tr>
+						<td>Francês:</td> 
+						<td> <input type = "radio" name = "ling_fran" value = N checked> Nenhum </td>
+						<td><input type = "radio" name = "ling_fran" value = B > Básico </td>
+						<td><input type = "radio" name = "ling_fran" value = I > Intermediário </td>
+						<td><input type = "radio" name = "ling_fran" value = A > Avançado </td>
+						
+				</tr>
+				
+				<tr>	
+						<td>Alemão:</td> 
+						<td> <input type = "radio" name = "ling_ale" value = N checked> Nenhum</td>
+						<td><input type = "radio" name = "ling_ale" value = B > Básico</td>
+						<td><input type = "radio" name = "ling_ale" value = I > Intermediário</td>
+						<td><input type = "radio" name = "ling_ale" value = A > Avançado</td>
+						
+				</tr>
+				
+				<tr>
+						<td><input type class="idioma" ="text" size = 10 maxlength="10"> : </td>
+						<td><input type = "radio" name = "ling_outro" value = N checked> Nenhum</td>
+						<td><input type = "radio" name = "ling_outro" value = B > Básico</td>
+						<td><input type = "radio" name = "ling_outro" value = I > Intermediário</td>
+						<td><input type = "radio" name = "ling_outro" value = A > Avançado</td>	
+				</tr>
+			</table>
+			</fieldset>
+<!--------------------------------------POR QUE VOCÊ QUER TRABALHAR AQUI -------------------------------------------------->			
+			<fieldset>
+			<legend> <label for="vocequer">Por que você quer trabalhar na Thrust Drone Brasil?</label></legend>
+			<textarea id="vocequer" name="vocequer" class="area"   
+			placeholder="500 caracteres" maxlength="500"></textarea>
+			</fieldset>
+
+
+
+			<div>
+				<input type = "submit" value = "enviar">
+				<input type = "reset"  value = "limpar">
+
+			</div>
+
+			
+		</form>
+	</div>
+	</section>
+	
+	<footer>
+	<p> Esta página visa apenas divulgar os conhecimentos do autor em HTML, CSS e JavaScript para fins de currículo profissional. 
+	O autor não se responsabiliza por cópias de terceiros de qualquer código deste projeto, assim como não colocará este site no ar. </p>
+	</footer>
+	
+	
+	</BODY>
+</HTML>

@@ -1,0 +1,267 @@
+/* ---------------------------------*/
+/* --------> ESTILO GERAL <-------- */
+/* ---------------------------------*/
+
+
+a:link	  { color: #00FF00; text-decoration:none;}	
+a:visited { color: #DF0101; text-decoration:none;}
+
+
+
+body {
+	background-color: #A9F5F2;
+	color: #0000FF;
+	font-family: "Arial", "times new roman","liberation";
+	font-size: 20px;
+
+		}
+
+.imglogo {	
+	  border-radius: 50%;
+	  display:inline-block;
+	  height: auto; 
+  	  max-width: 100%	
+}
+/* ----------------------------------*/
+/* --------> ESTILO SEÇÕES <-------- */
+/* ----------------------------------*/
+
+header  { 
+	 display: block; 
+	 margin-bottom: 2 px;
+}
+
+nav     {
+	 display: block; 
+	 float: center;
+	 font-family: "Arial", "Times New Roman", "Liberation";
+	 font-weight: bold;
+	 margin-right: 10 px;
+	 width: 150 px;	
+}
+
+section {
+	 display: block;	   
+	 position: relative;
+	 margim-bottom: 0px;
+         width: 100%;
+}
+
+footer {
+
+	background-color: #DD9977;
+	bottom: 0;
+	min-height: 60px;
+	left: 0;
+	position: relative;
+	margim-bottom: 0px;
+	text-align: left;
+	width: 100%;
+}
+
+/* --------------------------------*/
+/* --------> SEÇÃO DRONES<-------- */
+/* --------------------------------*/
+
+.tabinfo {
+	  background-color: #31B404;				   	
+	  border-collapse: collapse;
+	  border-color: #000000;	
+	  border-style: solid;		
+          color: #FAFAFA;
+	  font-family: "Arial","ubuntu","liberation";
+	  margin-top: 10px;	
+	  padding: 0px 5px 0px, 5px;		  		
+}
+
+
+.tabinfo .colTH{
+		font-size: 16px;
+		text-align:center;
+}
+
+.tabinfo .linTH{
+		color: #0000FF;
+		text-align: center;
+		font-size: 20px;
+		vertical-align: middle;
+}
+
+
+
+.tabinfo .preco{
+		color: #E00;
+		font-size: 16px;
+		font-weight: bold;	
+		text-align: center;	
+		vertical-align: middle; 
+}
+
+.posesq{	
+		float: left;		
+		top: 10px:
+				 
+}
+
+.posdir{
+	
+	float: right;		
+	top: 10px;
+
+}
+
+.tabinfo td, .tabinfo th {
+ 			  border: 3px solid #00F;
+		 	  padding: 4px 8px 4px 8px;
+}
+
+
+.tabinfo .titulo {
+	          background-color: #0000FF;
+		  color: #DF0101;	
+		  font-size: 24px;
+		  font-weight: bold;
+		  text-align: center;		  	
+}
+
+.imgCel img {
+  	     height: 100px;
+	     width: 100px;		
+}
+
+/* ----------------------------------*/
+/* --------> SEÇÃO CADASTRO<-------- */
+/* ----------------------------------*/
+
+/**** Posicionamento de Fieldsets ****/
+fieldset{
+	 margin: 20px 10px 10px 10px;	
+}
+
+
+.fieldEsq{
+	 display: inline; 
+	 float: left;
+	 margin: 0px 0px 0px 0px;
+}
+
+.fieldDir{
+	 display: inline; 
+	 float: right;
+	 margin: 0px 0px 0px 0px;
+}
+/**** Posicionamento e tamanho de elementos do formulário ****/
+
+.botoes {
+	 text-align: left;
+	 margin: 20px 10px 0px 10px;
+}
+
+.colPri{                     	/* Label da primera coluna grudado à esquerda do formulário */
+	display: block;
+	float: left;
+	width: 90px;
+}
+
+.divLinha{			/* Delimita linha do formulário */
+	  margin-bottom: 6px; 
+	  width: 850px;	  	
+}
+
+
+.elemDir{			/* Elemento da última coluna grudado à direita do formulário */
+	 display:block;
+	 float: right;
+		 
+}
+
+/**** Tamanho de Inputs do formulário ****/
+
+.inpGrande {
+	    width: 450px;		
+	 	
+}
+
+.inpMedio {
+	    width: 300px;		
+}
+
+.inpPequeno {		
+	    width:130px;		
+}
+
+.inpPequenoDir {
+		
+	    float: right;		
+	    width:130px;		
+}
+
+
+.inpMin {
+		
+	  		
+	    width: 20px;		
+}
+
+.inpMinDir {	
+ 	    float: right;  		
+	    width: 20px;		
+}
+
+.inpCep5 {
+	    width:40px;		
+}
+
+.inpCep3 {
+	    width:25px;		
+}
+
+.numDD {			/* Input numérico de dois dígitos*/
+	
+	width: 20px;	
+}
+
+.numQD {
+			/* Input numérico de quadro dígitos*/
+	width: 40px;
+}
+
+
+/* -------------------------------------------*/
+/* --------> SEÇÃO TRABALHE CONOSCO <-------- */
+/* -------------------------------------------*/
+
+.areaApres{
+	border: 1px solid;
+	height: 160px;
+	resize: none;
+	width:  100%;	
+}
+
+.area{
+	border: 1px solid;
+	height: 80px;
+	resize: none;
+	width:  100%;	
+}
+
+
+.idioma{
+	color: #0000FF;
+	font-family: "Arial", "times new roman","liberation";
+	font-size: 20px;
+	
+}
+
+
+/* -------------------------------------------*/
+/* --------> JavaScript <-------------------- */
+/* -------------------------------------------*/
+
+.imgJan {
+width: 160px;
+height: 160px;
+border: 3px solid #226699;
+padding: 12px 12px 12px 12px;
+background-color: #FFFFFF;
+}
